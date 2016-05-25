@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.stegeman.otn.model.OTNAppModule">
+      <AppModuleConfig name="OTNAppModuleLocal" ApplicationName="com.stegeman.otn.model.OTNAppModule" DeployPlatform="LOCAL" JDBCName="hr" jbo.project="com.stegeman.otn.model.Model">
+         <Security AppModuleJndiName="com.stegeman.otn.model.OTNAppModule"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="OTNAppModuleShared" ApplicationName="com.stegeman.otn.model.OTNAppModule" DeployPlatform="LOCAL" JDBCName="hr" jbo.project="com.stegeman.otn.model.Model">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Security AppModuleJndiName="com.stegeman.otn.model.OTNAppModule"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
